@@ -47,7 +47,7 @@
     <!-- header -->
     <header class="container mx-auto lg:px-10 px-5">
         <!-- navbar -->
-        <nav class="my-12">
+        <nav class="lg:my-12 my-8">
             <div class="navbar flex md:justify-between bg-base-100 lg:bg-primary-color rounded-full">
                 <div class="navbar flex justify-between">
                     <div class="dropdown dropdown-end order-last">
@@ -66,8 +66,9 @@
                         </ul>
                     </div>
                     <div class="lg:mx-auto">
-                        <a class="flex items-center justify-center text-4xl font-bold text-white"><img class="mr-3"
-                                src="./images/logo.png" alt="">Fruit Burst</a>
+                        <a
+                            class="flex items-center justify-center md:text-4xl text-xl font-bold lg:text-white text-black"><img
+                                class="mr-3" src="./images/logo.png" alt="">Fruit Burst</a>
                     </div>
                 </div>
                 <div class="navbar-center hidden lg:flex lg:order-first ">
@@ -92,16 +93,18 @@
         </nav>
         <!-- banner section  -->
         <section>
-            <div class="carousel w-full h-[190px] md:h-[450px] lg:h-[600px] relative">
+            <div class="carousel w-full h-[190px] md:h-[450px] lg:h-[600px] relative rounded-xl">
                 <!-- slide one -->
                 <div id="slide1" class="carousel-item relative w-full bg-no-repeat bg-banner-img-one bg-cover">
+                    <!-- overly -->
+                    <div class="absolute opacity-60 bg-black top-0 left-0 w-full h-full z-0"></div>
                     <!-- banner content -->
-                    <div class="flex text-center mx-auto items-center">
+                    <div class="flex text-center mx-auto items-center z-20">
                         <div>
                             <h2 class="lg:text-7xl md:text-5xl text-2xl font-extrabold text-white">Exotic tastes at your
                                 <br> doorstep</h2>
                             <p class="md:text-xl text-sm font-normal text-white my-4 md:my-8">We supply highly quality
-                                organic products</p>
+                                organic products</p>3
                             <button
                                 class=" md:px-7  md:py-5 py-3 px-5 text-sm md:text-xl font-bold text-white bg-primary-color rounded-md border-0">Shop
                                 Now</button>
@@ -114,8 +117,10 @@
                 </div>
                 <!-- slide two -->
                 <div id="slide2" class="carousel-item relative w-full bg-no-repeat bg-banner-img-two bg-cover">
+                    <!-- overlay -->
+                    <div class="absolute opacity-60 bg-black top-0 left-0 w-full h-full z-0"></div>
                     <!-- banner content -->
-                    <div class="flex text-center mx-auto items-center">
+                    <div class="flex text-center mx-auto items-center z-20">
                         <div>
                             <h2 class="lg:text-7xl md:text-5xl text-2xl font-extrabold text-white">Exotic tastes at your
                                 <br> doorstep</h2>
@@ -133,8 +138,10 @@
                 </div>
                 <!-- slide three -->
                 <div id="slide3" class="carousel-item relative w-full bg-no-repeat bg-banner-img-three bg-cover">
+                    <!-- overlay -->
+                    <div class="absolute opacity-60 bg-black top-0 left-0 w-full h-full z-0"></div>
                     <!-- banner content -->
-                    <div class="flex text-center mx-auto items-center">
+                    <div class="flex text-center mx-auto items-center z-20">
                         <div>
                             <h2 class="lg:text-7xl md:text-5xl text-2xl font-extrabold text-white">Exotic tastes at your
                                 <br> doorstep</h2>
@@ -152,8 +159,10 @@
                 </div>
                 <!-- fourth -->
                 <div id="slide4" class="carousel-item relative w-full bg-no-repeat bg-banner-img-four bg-cover">
+                    <!-- overlay -->
+                    <div class="absolute opacity-60 bg-black top-0 left-0 w-full h-full z-0"></div>
                     <!-- banner content -->
-                    <div class="flex text-center mx-auto items-center">
+                    <div class="flex text-center mx-auto items-center z-10">
                         <div>
                             <h2 class="lg:text-7xl md:text-5xl text-2xl font-extrabold text-white">Exotic tastes at your
                                 <br> doorstep</h2>
@@ -546,7 +555,7 @@
         <section>
             <!-- team container -->
             <div class="hero md:min-h-[690px] bg-banner-img-team bg-no-repeat bg-cover">
-                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-overlay bg-opacity-70"></div>
                 <div class="hero-content text-neutral-content">
                     <div class="text-center">
                         <h1 class="mb-5 text-xl md:text-3xl lg:text-5xl font-bold my-8">Meet the team section</h1>
@@ -743,7 +752,7 @@
                 <a class="link link-hover text-lg font-semibold">All Fruit</a>
                 <div class="mx-auto gap-6 flex">
                     <a class="link link-hover text-lg font-semibold">Support</a>
-                <a class="link link-hover text-lg font-semibold">Account</a>
+                    <a class="link link-hover text-lg font-semibold">Account</a>
                 </div>
             </div>
             <div class="grid grid-flow-col gap-6  lg:gap-10">
