@@ -47,41 +47,46 @@
     <!-- header -->
     <header class="container mx-auto lg:px-10 px-5">
         <!-- navbar -->
-        <nav>
-            <div class="navbar flex md:justify-between bg-base-100">
-                <div class="flex">
-                    <div class="dropdown order-last">
+        <nav class="my-12">
+            <div class="navbar flex md:justify-between bg-base-100 lg:bg-primary-color rounded-full">
+                <div class="navbar flex justify-between">
+                    <div class="dropdown dropdown-end order-last">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <ul tabindex="0"
-                            class="menu order-12 menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 3</a></li>
+                        <ul tabindex="1"
+                            class="menu order-12 menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32 ">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruit</a></li>
                         </ul>
                     </div>
                     <div class="lg:mx-auto">
-                        <a class="flex items-center justify-center"><img src="./images/logo.png" alt="">Fruit Burst</a>
+                        <a class="flex items-center justify-center text-4xl font-bold text-white"><img class="mr-3"
+                                src="./images/logo.png" alt="">Fruit Burst</a>
                     </div>
                 </div>
-                <div class="navbar-center hidden lg:flex lg:order-first">
-                    <ul class="menu menu-horizontal px-7">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 3</a></li>
+                <div class="navbar-center hidden lg:flex lg:order-first ">
+                    <ul class="menu menu-horizontal lg:px-7 text-lg font-medium text-white">
+                        <li><a class="">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruit</a></li>
                     </ul>
                 </div>
                 <div class="lg:block hidden">
-                    <a class="btn">
-                        <div class="join">
-                            <input class="input input-bordered join-item" placeholder="Email" />
-                            <button class="btn join-item rounded-r-full">Subscribe</button>
+                    <div class="">
+                        <div class="join mr-10 rounded-full">
+                            <input class="input input-bordered join-item py-7 outline-none" placeholder="Search Here" />
+                            <button class="py-3 px-5 text-black bg-white rounded-l-none outline-none"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -245,7 +250,43 @@
                                 <input type="radio" name="rating-1"
                                     class="bg-primary-color mask mask-star-2 mask-half-2" />
                             </div>
-                            <a class="text-lg font-bold text-primary-color" href="#">Details</a>
+                            <!-- modal item one -->
+                            <a class="text-lg font-bold text-primary-color cursor-pointer"
+                                onclick="my_modal_6.showModal()">Details</a>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl mx-auto" />
+                                    <h3 class="text-4xl font-extrabold text-black  mt-6 ">Apple</h3>
+                                    <p class="mt-5 text-base font-medium">Professional employees are there for you to
+                                        pick the most <br> amazing
+                                        and fresh fruits.</p>
+                                    <div class="modal-action flex-col">
+                                        <!-- ratting  -->
+                                        <div class="rating mx-auto mb-8">
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" checked />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                        </div>
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <div class="space-x-4">
+                                            <button
+                                                class="btn text-center border border-primary-color bg-white hover:bg-primary-color hover:text-white">Close</button>
+                                            <button
+                                                class="btn text-center border border-primary-color bg-white hover:bg-primary-color hover:text-white ">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+                            <!-- end modal first -->
                         </div>
                     </div>
                     <!-- second item -->
@@ -281,7 +322,43 @@
                                 <input type="radio" name="rating-2"
                                     class="bg-primary-color mask mask-star-2 mask-half-2" />
                             </div>
-                            <a class="text-lg font-bold text-primary-color" href="#">Details</a>
+                            <!-- modal item one -->
+                            <a class="text-lg font-bold text-primary-color cursor-pointer"
+                                onclick="my_modal_7.showModal()">Details</a>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl mx-auto" />
+                                    <h3 class="text-4xl font-extrabold text-black  mt-6 ">Orange</h3>
+                                    <p class="mt-5 text-base font-medium">Professional employees are there for you to
+                                        pick the most <br> amazing
+                                        and fresh fruits.</p>
+                                    <div class="modal-action flex-col">
+                                        <!-- ratting  -->
+                                        <div class="rating mx-auto mb-8">
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" checked />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                        </div>
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <div class="space-x-4">
+                                            <button
+                                                class="btn text-center border border-primary-color bg-white hover:bg-primary-color hover:text-white">Close</button>
+                                            <button
+                                                class="btn text-center border border-primary-color bg-white hover:bg-primary-color hover:text-white ">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+                            <!-- end modal first -->
                         </div>
                     </div>
                     <!-- third item -->
@@ -317,7 +394,43 @@
                                 <input type="radio" name="rating-3"
                                     class="bg-primary-color mask mask-star-2 mask-half-2" />
                             </div>
-                            <a class="text-lg font-bold text-primary-color" href="#">Details</a>
+                            <!-- modal item one -->
+                            <a class="text-lg font-bold text-primary-color cursor-pointer"
+                                onclick="my_modal_8.showModal()">Details</a>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl mx-auto" />
+                                    <h3 class="text-4xl font-extrabold text-black  mt-6 ">Dragon Fruit</h3>
+                                    <p class="mt-5 text-base font-medium">Professional employees are there for you to
+                                        pick the most <br> amazing
+                                        and fresh fruits.</p>
+                                    <div class="modal-action flex-col">
+                                        <!-- ratting  -->
+                                        <div class="rating mx-auto mb-8">
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" checked />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                        </div>
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <div class="space-x-4">
+                                            <button
+                                                class="btn text-center border border-primary-color bg-white hover:bg-primary-color hover:text-white">Close</button>
+                                            <button
+                                                class="btn text-center border border-primary-color bg-white hover:bg-primary-color hover:text-white ">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+                            <!-- end modal first -->
                         </div>
                     </div>
                     <!-- fourth item -->
@@ -353,7 +466,43 @@
                                 <input type="radio" name="rating-10"
                                     class="bg-primary-color mask mask-star-2 mask-half-2" />
                             </div>
-                            <a class="text-lg font-bold text-primary-color" href="#">Details</a>
+                            <!-- modal item one -->
+                            <a class="text-lg font-bold text-primary-color cursor-pointer"
+                                onclick="my_modal_9.showModal()">Details</a>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <dialog id="my_modal_9" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl mx-auto" />
+                                    <h3 class="text-4xl font-extrabold text-black  mt-6 ">Banana</h3>
+                                    <p class="mt-5 text-base font-medium">Professional employees are there for you to
+                                        pick the most <br> amazing
+                                        and fresh fruits.</p>
+                                    <div class="modal-action flex-col">
+                                        <!-- ratting  -->
+                                        <div class="rating mx-auto mb-8">
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" checked />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                            <input type="radio" name="rating-4"
+                                                class="mask mask-star-2 bg-primary-color" />
+                                        </div>
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <div class="space-x-4">
+                                            <button
+                                                class="btn text-center border border-primary-color bg-white hover:bg-primary-color hover:text-white">Close</button>
+                                            <button
+                                                class="btn text-center border border-primary-color bg-white hover:bg-primary-color hover:text-white ">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+                            <!-- end modal first -->
                         </div>
                     </div>
                 </div>
@@ -456,7 +605,7 @@
                 <a class="link link-hover text-lg font-semibold">Support</a>
                 <a class="link link-hover text-lg font-semibold ">Account</a>
             </div>
-            <div class="grid grid-cols-3 gap-4 lg:grid-flow-col lg:gap-10">
+            <div class="grid grid-cols-3  lg:grid-flow-col lg:gap-10">
                 <a><i class="fa-brands fa-twitter text-4xl"></i></a>
                 <a><i class="fa-brands fa-facebook text-4xl"></i></a>
                 <a><i class="fa-brands fa-youtube text-4xl"></i></a>
